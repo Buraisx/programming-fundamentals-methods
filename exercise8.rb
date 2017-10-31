@@ -1,5 +1,5 @@
 speeds = Array.new(3)
-
+# Method for distance calculation
 def calc_dist(distance, mins)
 	secs = mins*60
 	speed = distance/secs
@@ -20,6 +20,7 @@ while i<4
 	i += 1
 end
 
+# speed checking again
 if (speeds[2]>speeds[1] && speeds[2]>speeds[0])
 	puts "Person 3 was the fastest at #{speeds[2]} m/s"
 
@@ -31,7 +32,7 @@ elsif (speeds[0]>speeds[2] && speeds[0]>speeds[1])
 
 elsif (speeds[2]==speeds[1] && speeds[2]==speeds[0])
 	puts "Everyone tied at #{speeds[2]}"
-	
+
 else
 	puts "Well done everyone"
 end
