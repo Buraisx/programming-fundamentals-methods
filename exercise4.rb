@@ -1,9 +1,11 @@
-def greet_backwards(your_name)
-	reversed = your_name.reverse
-	puts("Hello, #{reversed+reversed}! Welcome home.")
+def greater_than_eight?(your_name)
+	if(your_name.length > 8)
+		return true
+	else
+		return false
+	end
 end
 
-greet_backwards("Bob")
-greet_backwards("Shirly")
-greet_backwards("Sue")
-greet_backwards("Andy")
+puts("Enter a name.")
+new_name=gets.chomp
+puts("#{greater_than_eight?(new_name)}")
